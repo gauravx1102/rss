@@ -1,0 +1,120 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+    <link rel="favicon" href="{%static 'images/favicon.ico' %}"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+    <title style="font-family: 'Sacramento', cursive;" >RSS Almora</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-sm bg-primary fixed-top">
+      <div class="container-fluid">
+        <a href="/" class="navbar-brand">
+          <img
+            src="{% static 'images/logo.png' %}"
+            style="height: 45px; width: 45px; border-radius: 50%"
+            alt="Logo"
+          />
+        </a>
+      
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarCollapse"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div id="navbarCollapse" class="collapse navbar-collapse">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item px-3">
+              <a
+                class="nav-link"
+                href="{% url 'index' %}"
+                style="color: white !important"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item px-3">
+              <a
+                class="nav-link"
+                href="{% url 'about_us' %}"
+                style="color: white !important" 
+                >About Us</a
+              >
+            </li>
+            <li class="nav-item px-3">
+              <a
+                class="nav-link"
+                href="{% url 'notice' %}"
+                style="color: white !important"
+                >Notifications{% if is_latest_record %}&nbsp;<i class="fa fa-star" style="color:red" aria-hidden="true"></i>{% endif %}</a
+              >
+              <li class="nav-item px-3">
+                <a
+                  class="nav-link"
+                  href="{% url 'notice' %}"
+                  style="color: white !important"
+                  >Forms{% if is_latest_record %}&nbsp;<i class="fa fa-star" style="color:red" aria-hidden="true"></i>{% endif %}</a
+                >
+            </li>
+            <li class="nav-item px-3">
+              <a
+                class="nav-link"
+                href="{% url 'contact' %}"
+                style="color: white !important"
+                >Contact Us</a
+              >
+            </li>
+            <li class="nav-item px-3">
+              <a
+                class="nav-link"
+                href="{% url 'ask_your_query' %}"
+                style="color: white !important"
+                >Ask Your Question</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    {% block content %}
+    {% endblock %}
+    {% block extra_scripts %}
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+    {% endblock %}
+  </body>
+</html>
+

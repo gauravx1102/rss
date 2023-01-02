@@ -1,0 +1,22 @@
+
+/* path => static/css/homepage.css */
+
+.navbar{
+    background-color: #F6F5D7;
+    color:black !important;
+    margin:0%;
+    padding: 0%;
+    border: 1px solid rgb(27, 21, 21);
+}
+
+.title1{
+    font-family: 'sans-serif';
+}
+
+.logo{
+    height: 50px;
+    width: 80px;
+}
+
+/* baltlogs.com */
+
