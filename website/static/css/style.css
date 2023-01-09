@@ -50,10 +50,33 @@
 }
 
 .form{
-  margin-top 10px;
-  margin-left: 77%;
-  padding: 30px,30px,30px,30px;
-  border-right-width: 50px;
+  top: 150px;
+  left: 78%;
+  /* padding: 30px,30px,30px,30px; */
+  position: absolute;
   width: 20%;
   background-color: #f7f7f7 !important;
 }
+
+/* .form1{
+  margin-left: 20%;
+} */
+.form1{
+  top: 650px;
+  left: 78%;
+  /* padding: 30px,30px,30px,30px; */
+  position: absolute;
+  width: 20%;
+  background-color: #f7f7f7 !important;
+}
+
+
+  .hr{
+    background-color: none;
+    border-style: none;
+    border-top-style: dotted;
+    border-color: rgb(26, 8, 8);
+    border-width: 5px;
+    width: 5%;
+    /* height: : 0px; */
+   }

@@ -1,15 +1,15 @@
 {% include 'website/index.html' with is_latest_record=is_latest_record %}
 
 {% block content %}
-<div style="background-color: #EEF1FF !important; height: 100%; min-height: 100vh;">
-  <div class="container" style="margin-top: 70px;">
+<div style="background-color: #EEF1FF !important; height: 100%; min-height: 115vh;">
+  <div class="container" style="margin-top: 70px; width: 60%;">
     <div class="row marquee">
       <marquee loop="infinite" height="25" style=" margin-top: 5px; font-size: 18px; width: max-width !important;">
         <p><strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; उत्तराखण्ड शासन के शिक्षा अनुभाग- 2 के शासनादेश संख्या-837/XXIV-2/ 08-23(1) 2008 के जरिये दिनांक 27-नवम्बर-2008 के अनुसार उत्तर प्रदेश (सेवा संघों को मान्यता)नियमावली-1979 के नियम 3(1) के प्रावधानों के अनुसार एवं उक्त नियमावली में उल्लेखित नियमों / शर्तों के अधीन “राजकीय शिक्षक संघ” को मान्यता प्रदान की गयी थी | संघ को मान्यता प्राप्त होने के पश्चात “राजकीय शिक्षक संघ,उत्तराखण्ड” का लिखित संविधान संघ के प्रथम प्रांतीय द्विवार्षिक अधिवेशन, राजकीय इंटर कॉलेज, अल्मोड़ा,जनपद- अल्मोड़ा में दिनांक 28-अगस्त-2009 को पारित कर उसी दिन से लागू किया गया। </strong></p>
       </marquee>
     </div>
   </div>
-    <div class="container" style="font-size: 30px; margin-top: 10px; line-height: 2; margin-left: 100px;"> 
+    <div class="container" style="font-size: 30px; margin-top: 10px; line-height: 2; margin-left: 100px; width: 60%;"> 
         </br>
         {% for record in records %}
           <ul>
@@ -19,24 +19,38 @@
         </ul>
         {% endfor %}
   </div>
-  <div class="form" >
+  <div>
+    <div class="form" >
     <div class="title" style="text-align: center; font-size: 30px; color: black;">Forms</div><hr style="margin: 1px;">
       <div class="row updateBoxWrap">
-        <div class="updateBox" id="lu" style="overflow: hidden; position: relative; height: 452px;">
-
-        </div>
+        <marquee  loop="infinite" direction="up" onmouseover="this.stop()" onmouseout="this.start()" class="updateBox" id="lu" style="overflow: hidden; position: relative; height: 400px;">
+          <ul  style="font-size: 30px; margin-left: 5px;" >
+            <li style="padding:  1px;"> <i class="fa fa share"></i>Gaurav </li>
+            <li style="line-height: 2;" >Fulara</li>
+          </ul>
+        </marquee>
       </div>
     </div>
   </div>
-
-
-  <!-- <div class="row">
-    <div class="title">Latest Updates</div>
-            <ul style="position: absolute; margin: 0px; padding: 0px; top: 0px;">
-                <li style="margin: 0px; padding: 5px; height: 54px;"><i class="fa fa-share"></i><a href="https://kecua.ac.in/public/images/news/DDlQE858keiw.jpg">end sem exam absent student result
-
-        </a><a href="#" class="mybt btn-grad">View All</a>
-    </div> -->
+  <div>
+    <div class="form1" >
+      <div class="title" style="text-align: center; font-size: 35px; color: black;">शासनादेश</div><hr style="margin: 1px;">
+        <div class="row updateBoxWrap">
+          <marquee loop="infinite" direction="up" onmouseover="this.stop()" onmouseout="this.start()" class="updateBox" id="lu" style="overflow: hidden; position: relative; height: 400px;">
+            <ul  style="font-size: 30px; margin-left: 5px;" >
+              <li style="padding:  1px;"> <i class="fa fa share"></i>Gaurav </li>
+              <li style="line-height: 2;" >Fulara</li>
+            </ul>
+          </marquee>
+        </div>
+      </div>
+    </div>
+  </div><div class="copyright" style="background-color: #EEF1FF !important; padding-top: 100px; ">
+    <div class="footer" style="text-align: center;" >
+      राजकीय शिक्षक संघ (अल्मोड़ा) © 2022 | All Rights Reserved. Managed by 
+      <a style="color: black;" href="https://www.facebook.com/" target="_blank">Gaurav Fulara</a>&nbsp;&nbsp;<i class="fa fa-whatsapp" aria-hidden="true">&nbsp;</i>7253827202
+    </div><hr class="hr">
+  </div>
 </div>
 </div>
 {% endblock %}

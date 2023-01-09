@@ -20,6 +20,7 @@
 
     <link rel="stylesheet" href="{% static 'css/style.css' %}" />
     <link rel="favicon" href="{%static 'images/favicon.ico' %}"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Sacramento&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
     <title style="font-family: 'Sacramento', cursive;" >RSS Almora</title>
   </head>
@@ -68,13 +69,6 @@
                 style="color: white !important"
                 >Notifications{% if is_latest_record %}&nbsp;<i class="fa fa-star" style="color:red" aria-hidden="true"></i>{% endif %}</a
               >
-              <li class="nav-item px-3">
-                <a
-                  class="nav-link"
-                  href="{% url 'notice' %}"
-                  style="color: white !important"
-                  >Forms{% if is_latest_record %}&nbsp;<i class="fa fa-star" style="color:red" aria-hidden="true"></i>{% endif %}</a
-                >
             </li>
             <li class="nav-item px-3">
               <a

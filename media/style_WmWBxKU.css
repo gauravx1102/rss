@@ -1,0 +1,36 @@
+  body {
+   background-color: #788181;
+  }
+  hr{
+    background-color: none;
+    border-style: none;
+    border-top-style: dotted;
+    border-color: rgb(26, 8, 8);
+    border-width: 5px;
+    width: 5%;
+    /* height: : 0px; */
+   }
+
+   h1{
+    color: #06283D;
+   }
+   h3{
+    color: #06283D;
+   }
+   .ios{
+    color: blue;
+    /* background-size: 20px; */
+   }
+
+   .web{
+    color: green;
+   }
+
+   #heading{
+    color: gray;
+   }
+
+   img:hover{
+    border-radius: 89%;
+    background-color: #5a5d5f;
+   }
