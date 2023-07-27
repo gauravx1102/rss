@@ -75,8 +75,31 @@
     background-color: none;
     border-style: none;
     border-top-style: dotted;
-    border-color: rgb(26, 8, 8);
+    border-color: rgb(0, 0, 0);
     border-width: 5px;
     width: 5%;
+    align-items: center;
+    margin-left: 45%;
     /* height: : 0px; */
+   }
+   
+
+
+   .submit{
+    border-radius: 1em;
+
+    margin: 1em;
+    transition: all 1s ease-in-out .1ms;
+   }
+
+   .submit:hover{
+    cursor: pointer;
+    transform: rotate(360deg);
+    box-shadow: #e1e1e1;
+    
+   }
+
+   .form-group{
+
+    margin: 1em;
    }
